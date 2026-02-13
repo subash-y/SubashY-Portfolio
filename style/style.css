@@ -614,18 +614,36 @@ section {
   word-break: break-word;
 }
   
-  .about {
-    flex-direction: column-reverse;
-    text-align: center;
+.about {
+  flex-direction: column-reverse;
+  text-align: center;
   }
-  .about h2 {
-    text-align: center;
-    margin: 2rem 0;
+.about h2 {
+  text-align: center;
+  margin: 2rem 0;
   }
-  .about img {
-    width: 45vw;
-    height: 48vw;
+.about img {
+  width: 45vw;
+  height: 48vw;
   }
+.skill-box {
+  height: auto;          /* remove fixed height */
+  padding: 3rem 2rem;
+}
+
+.skill-have h4 {
+  font-size: 2.8rem;     /* reduce from 4rem */
+}
+
+.skill-have ul {
+  font-size: 2rem;       /* reduce from 3rem */
+}
+
+.skill-have i {
+  font-size: 6rem;       /* reduce from 10rem */
+}
+
+
   }
 
 
