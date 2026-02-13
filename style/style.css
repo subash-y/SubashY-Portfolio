@@ -20,6 +20,7 @@ html {
 body {
   background: var(--bg-color);
   color: var(--text-color);
+   padding-top: 8rem; 
 }
 
 .header {
@@ -581,18 +582,38 @@ section {
   }
 
   .home {
-    flex-direction: column-reverse;
-    margin: 5rem 0;
-    gap: 5rem;
-  }
-  .home-content {
-    align-items: center;
-    text-align: center;
-  }
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 3rem;              /* reduce gap */
+  width: 100%;
+}
   .home-image img {
     width: 45vw;
     height: 48vw;
   }
+  .home-content {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+}
+
+.home-content h1 {
+  font-size: 5rem;      /* reduced from 7rem */
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.home-content h3 {
+  font-size: 2.8rem;    /* reduced from 4rem */
+  line-height: 1.4;
+  word-break: break-word;
+}
+  
   .about {
     flex-direction: column-reverse;
     text-align: center;
@@ -606,6 +627,5 @@ section {
     height: 48vw;
   }
   }
-
 
 
