@@ -155,7 +155,7 @@ span {
 
 section {
   min-height: 10vh;
-  padding: 10rem 15%;
+  padding: 10rem 8%;
 }
 
 .home {
@@ -385,7 +385,7 @@ section {
 
 .project-box {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: stretch;
   gap: 3rem;
   row-gap: 5rem;
@@ -415,7 +415,7 @@ section {
 }
 
 .project-card img {
-  max-width: 350px;
+  max-width: 300px;
   border-radius: 2em;
   object-fit: cover;
 }
@@ -548,4 +548,36 @@ section {
     width: 45vw;
     height: 48vw;
   }
+}
+
+@media (max-width: 768px) {
+
+  .heading,
+  .about-content h2,
+  .contact-container h2 {
+    font-size: 5rem;
+  }
+
+
+  section {
+    padding: 6rem 5%;
+  }
+
+  .project-box,
+  .skill-container {
+    grid-template-columns: 1fr;
+  }
+
+  .home-image img,
+  .about-image img {
+    width: 70%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  .project-card img {
+    max-width: 100%;
+  }
+
+
 }
