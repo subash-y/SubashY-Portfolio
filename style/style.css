@@ -495,6 +495,7 @@ section {
   font-size: 18px;
 }
 
+
 @media (max-width: 1285px) {
   #menu-icon {
     display: block;
@@ -557,7 +558,21 @@ section {
   .contact-container h2 {
     font-size: 5rem;
   }
+    .home {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
 
+  .home-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-image {
+    display: flex;
+    justify-content: center;
+  }
 
   section {
     padding: 6rem 5%;
@@ -568,11 +583,13 @@ section {
     grid-template-columns: 1fr;
   }
 
-  .home-image img,
+   .home-image img,
   .about-image img {
-    width: 70%;
-    max-width: 280px;
-    height: auto;
+    width: 60vw;
+    max-width: 250px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
   }
 
   .project-card img {
