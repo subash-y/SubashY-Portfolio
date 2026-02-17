@@ -332,20 +332,21 @@ section {
   /*Instead of hard code of number of columns use this 
   repeat(autofit,minmax()) which will automatically fits 
   the card side by side*/
-  align-items: center;
+  align-items: stretch;
   gap: 1.5rem;
 }
 
 .skill-box {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   background-color: var(--main-color);
-  height: 500px;
   border-radius: 3.5rem;
   cursor: pointer;
   border: 5px solid transparent;
   transition: 0.4s ease-in-out;
+  
 }
 
 .skill-box:hover {
@@ -371,14 +372,22 @@ section {
 }
 
 .skill-have ul {
-  font-size: 3rem;
-  font-weight: 525;
-  line-height: 1.7;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
+.skill-have ul li {
+  list-style: none;
+  margin: 0.8rem 0;
+  font-size: 2.5rem;
+}
+
 
 .skill-have i {
   font-size: 10rem;
 }
+
 
 .projects {
   background-color: var(--second-bg-color);
@@ -586,7 +595,7 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 3rem;              /* reduce gap */
+  gap: 3rem;              
   width: 100%;
 }
   .home-image img {
@@ -603,13 +612,13 @@ section {
 }
 
 .home-content h1 {
-  font-size: 5rem;      /* reduced from 7rem */
+  font-size: 5rem;      
   line-height: 1.2;
   word-break: break-word;
 }
 
 .home-content h3 {
-  font-size: 2.8rem;    /* reduced from 4rem */
+  font-size: 2.8rem;    
   line-height: 1.4;
   word-break: break-word;
 }
@@ -626,24 +635,27 @@ section {
   width: 45vw;
   height: 48vw;
   }
+
+
 .skill-box {
-  height: auto;          /* remove fixed height */
+  height: auto;         
   padding: 3rem 2rem;
 }
+ .skill-container {
+    grid-template-columns: 1fr;
+  }
 
 .skill-have h4 {
-  font-size: 2.8rem;     /* reduce from 4rem */
+  font-size: 2.8rem;    
 }
 
 .skill-have ul {
-  font-size: 2rem;       /* reduce from 3rem */
+  font-size: 2rem;       
 }
 
 .skill-have i {
-  font-size: 6rem;       /* reduce from 10rem */
+  font-size: 6rem;       
 }
 
 
-  }
-
-
+}

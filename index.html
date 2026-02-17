@@ -1,406 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Subash</title>
-    <link rel="stylesheet" href="./style/style.css"/>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="icon" type="image/png" sizes="48x48" href="images/iconlogo.png">
 
-    
-  </head>
-  <body>
-    
-     <header class = "header">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subash</title>
+  <link rel="stylesheet" href="./style/style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/png" sizes="48x48" href="images/iconlogo.png">
 
-        <a href="#home" class="logo"> 
-          <span>Subash</span> Y
+
+</head>
+
+<body>
+
+  <header class="header">
+
+    <a href="#home" class="logo">
+      <span>Subash</span> Y
+    </a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skill</a>
+      <a href="#projects">Project</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="gradient-btn resumebtn-js">Resume</button>
+  </header>
+  <!-- Resume Popup -->
+  <div class="resume-modal" id="resumeModal">
+    <div class="resume-modal-content">
+      <h2><span>Resume Options</span></h2>
+      <button id="viewResume">View</button>
+      <button id="downloadResume">Download</button>
+      <button id="closeModal">Cancel</button>
+    </div>
+  </div>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Hi, It's <span>Subash Y</span></h1>
+      <h3>
+        I'm a <span>Web Developer and Software Developer,Cybersecurity Enthusiast (Learning)</span>
+      </h3>
+      <p> I’m passionate about crafting innovative software solutions, building dynamic web experiences,
+        and expanding my knowledge in cybersecurity as I continue my learning journey.
+        My portfolio reflects creativity, technical growth, and a commitment to continuous improvement.
+        Through my projects, I aim to deliover impactful results while exploring new horizons in the digital world.
+      </p>
+      <div class="social-icons">
+        <a href="https://github.com/subash-y" target="_blank">
+          <i class="bx bxl-github"></i>
         </a>
-        <i class="bx bx-menu" id="menu-icon"></i>
+        <a href="https://www.linkedin.com/in/subash-yuvaraj-9b5a03190" target="_blank">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+        <a href="mailto:subashyuvaraj495@email.com" target="_blank">
+          <i class="bx bx-envelope"></i>
+        </a>
+        <a id="whatsappLink" target="_blank">
+          <i class="bx bxl-whatsapp"></i>
+        </a>
+      </div>
+      <div class="btn-group">
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+    </div>
 
-        <nav class="navbar">
-          <a href ="#home">Home</a>
-          <a href ="#about">About</a>
-          <a href ="#skills">Skill</a>
-          <a href ="#projects">Project</a>
-          <a href ="#contact">Contact</a>
-        </nav>
-        <button class="gradient-btn resumebtn-js">Resume</button>
-    </header>
-    <!-- Resume Popup -->
-<div class="resume-modal" id="resumeModal">
-  <div class="resume-modal-content">
-    <h2><span>Resume Options</span></h2>
-    <button id="viewResume">View</button>
-    <button id="downloadResume">Download</button>
-    <button id="closeModal">Cancel</button>
-  </div>
-</div>
+    <div class="home-image">
+      <img src="images/profilepic.jpg" alt="Profile pic">
+    </div>
 
-      <section class="home" id="home">    
-        <div class="home-content">
-          <h1>Hi, It's <span>Subash Y</span></h1>
-          <h3>
-            I'm a <span>Web Developer and Software Developer,Cybersecurity Enthusiast (Learning)</span>
-          </h3>
-          <p> I’m passionate about crafting innovative software solutions, building dynamic web experiences, 
-              and expanding my knowledge in cybersecurity as I continue my learning journey. 
-              My portfolio reflects creativity, technical growth, and a commitment to continuous improvement. 
-              Through my projects, I aim to deliover impactful results while exploring new horizons in the digital world.
+  </section>
+  <section class="about" id="about">
+
+    <div class="about-image">
+      <img src="./images/profilepic.jpg" alt="about profile">
+    </div>
+
+    <div class="about-content">
+      <h2>About <span>Me</span></h2>
+      <p>
+        I am a Electroncis and Communication Engineering graduate with strong interests in software development,
+        backend engineering, web technologies, and cybersecurity.
+        I enjoy building structured, efficient applications that combine clean architecture, optimized logic, and
+        user-focused design.
+        My experience includes working with system-level programming concepts, socket programming,
+        Linux environments, and modern web technologies. I continuously explore security fundamentals
+        and backend optimization while strengthening my frontend skills to deliver complete and reliable solutions.
+        I am currently seeking opportunities where I can contribute, collaborate, and grow as a software engineer.
+      </p>
+      <!--<a href="#" class="btn">Read More</a>-->
+    </div>
+  </section>
+  <!--Skill Section-->
+  <section class="skills" id="skills">
+
+
+    <h2 class="heading">SKILL</h2>
+
+    <div class="skill-container">
+
+      <!--Programming lang -->
+      <div class="skill-box">
+        <div class="skill-have">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h4>Programming Languages</h4>
+          <p>
+            <ul>
+              <li>C</li>
+              <li>Python</li>
+              <li>PHP</li>
+              <li>JavaScript</li>
+            </ul>
           </p>
-            <div class="social-icons">
-              <a href="https://github.com/subash-y" target="_blank" >
-                <i class="bx bxl-github"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/subash-yuvaraj-9b5a03190" target="_blank">
-                <i class="bx bxl-linkedin"></i>
-              </a>
-              <a href="mailto:subashyuvaraj495@email.com" target="_blank">
-                 <i class="bx bx-envelope"></i>
-              </a>
-              <a id="whatsappLink" target="_blank">
-                <i class="bx bxl-whatsapp"></i>
-              </a>
-            </div>
-            <div class="btn-group">
-              <a href="#contact" class="btn">Contact</a>
-            </div>
         </div>
+      </div>
 
-        <div class="home-image">
-          <img src="images/profilepic.jpg" alt="Profile pic">
-        </div> 
+      <!--Web Develop -->
+      <div class="skill-box">
+        <div class="skill-have">
+          <i class="fa-solid fa-globe"></i>
+          <h4>Web Development</h4>
+          <p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Node.js</li>
+            </ul>
+          </p>
+        </div>
+      </div>
 
-      </section>
-<section class="about" id="about">
+      <!-- DB-->
+      <div class="skill-box">
+        <div class="skill-have">
+          <i class="fa-solid fa-database"></i>
+          <h4>Database</h4>
+          <p>
+            <ul>
+              <li>MySQL</li>
+            </ul>
+          </p>
+        </div>
+      </div>
 
-<div class="about-image">
-  <img src="./images/profilepic.jpg" alt="about profile">
-</div>
+      <!--OS & Env -->
+      <div class="skill-box">
+        <div class="skill-have">
+          <i class="bx bx-windows"></i>
+          <h4>Operating System & Environments</h4>
+          <p>
+            <ul>
+              <li>Windows</li>
+              <li>Linux</li>
+              <li>WSL</li>
+            </ul>
+          </p>
+        </div>
+      </div>
 
-<div class="about-content">
-  <h2>About <span>Me</span></h2>
-  <p>
-    I am a Electroncis and Communication Engineering graduate with strong interests in software development,
-    backend engineering, web technologies, and cybersecurity. 
-    I enjoy building structured, efficient applications that combine clean architecture, optimized logic, and user-focused design.
-    My experience includes working with system-level programming concepts, socket programming,
-    Linux environments, and modern web technologies. I continuously explore security fundamentals 
-    and backend optimization while strengthening my frontend skills to deliver complete and reliable solutions.
-    I am currently seeking opportunities where I can contribute, collaborate, and grow as a software engineer.
-  </p>
-  <!--<a href="#" class="btn">Read More</a>-->
-</div>
-</section>
-<!--Skill Section-->
-<section class="skills" id="skills">
+      <!--Dev tools -->
+      <div class="skill-box">
+        <div class="skill-have">
+          <i>🛠</i>
+          <h4>Development Tools</h4>
+          <p>
+            <ul>
+              <li>Git</li>
+              <li>Makefile</li>
+            </ul>
 
+          </p>
+        </div>
+      </div>
 
-<h2 class="heading">SKILL</h2>
+      <!-- Core Tech concepts-->
+      <div class="skill-box">
+        <div class="skill-have">
+          <i>⚙</i>
+          <h4>Core Technical Concepts</h4>
+          <p>
+            <ul>
+              <li>Socket Programming</li>
+              <li>Multithreading</li>
+              <li>Basic Networking Concepts</li>
 
-<div class="skill-container">
-  
-  <!--Programming lang -->
-  <div class="skill-box">
-    <div class="skill-have">
-      <i class="fa-solid fa-laptop-code"></i>
-      <h4>Programming Languages</h4>
-      <p>
-        <ul>C</ul>
-        <ul>Python</ul>
-        <ul>PHP</ul>
-         <ul>JavaScript</ul>
-      </p>
+            </ul>
+
+          </p>
+        </div>
+      </div>
+
+      <!--Tools and Tech -->
+      <div class="skill-box">
+        <div class="skill-have">
+          <h4>Engineering and Productivity</h4>
+          <p>
+            <ul>
+              <li>MATLAB</li>
+              <li>Microsoft Office Suite</li>
+              <li>PCB Design & Assembly</li>
+              <li>Adobe Photoshop</li>
+              <li>Video Editing</li>
+            </ul>
+
+          </p>
+        </div>
+      </div>
+
+      <!--Soft skills -->
+      <div class="skill-box">
+        <div class="skill-have">
+          <i class="fa-solid fa-splotch"></i>
+          <h4>Soft Skills</h4>
+          <p>
+            <ul>
+              <li>Good Communication</li  >
+              <li>Time Management</li>
+              <li>Teamwork</li>
+              <li>Adaptability</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
     </div>
-  </div>
-  
-  <!--Web Develop -->
-  <div class="skill-box">
-    <div class="skill-have">
-      <i class="fa-solid fa-globe"></i>
-      <h4>Web Development</h4>
-      <p>
-        <ul>HTML</ul>
-        <ul>CSS</ul>
-        <ul>Node.js</ul>
+
+
+
+  </section>
+
+  <section class="projects" id="projects">
+
+    <h2 class="heading">Projects</h2>
+    <div class="project-box">
+
+      <div class="project-card">
+        <!-- First Project -->
+        <img src="./images/project1.png" alt="">
+        <h3>CNN-Based Detection and Classification of Lung and Colon Cancer (2025)</h3>
+        <p>
+          Developed an automated deep learning-based diagnostic system for detecting and classifying lung and colon
+          cancer from histopathological images.
+          The system utilized Convolutional Neural Networks (CNNs), specifically DenseNet-121 and ResNet-50
+          architectures,
+          to accurately differentiate between benign and malignant tissue samples across five classes.
+          The workflow included image preprocessing (resizing, Gaussian filtering, contrast enhancement),
+          Modified Fuzzy C-Means (MFCM) segmentation for isolating regions of interest, and texture-based
+          feature extraction using Gray Level Co-occurrence Matrix (GLCM).
+          Particle Swarm Optimization (PSO) was applied for optimal feature selection, improving classification
+          efficiency.
+          A hybrid classification approach combining Multi-Class SVM and deep learning models was implemented and
+          evaluated using metrics such as accuracy,
+          sensitivity, specificity, F-score, Dice coefficient, and Jaccard index.
+          The system was integrated with a user-friendly MATLAB GUI to enable real-time image upload and automated
+          cancer prediction,
+          supporting medical professionals in faster and more reliable diagnosis.
         </p>
+      </div>
+      <div class="project-card">
+        <!-- Second Project -->
+        <img src="./images/project2.png" alt="">
+        <h3>Fire Detection using Haar Cascade Classifier</h3>
+        <p>
+          The Fire Detection Using Haar Cascade Classifier project is a real-time computer vision–based safety system
+          developed
+          to detect fire using the built-in camera of PC. The system is implemented in Python using the OpenCV
+          and is based on the Haar Cascade algorithm proposed by Paul Viola and Michael Jones. The live video feed
+          from the inbuilt webcam is processed frame by frame to identify fire regions, and when fire is detected,
+          the system highlights the area and displays a notification on the screen. In addition to software detection,
+          I integrated hardware components using an ESP32,LCD 16x2 and beep buzzer.
+          The ESP32 is connected to the Python program for processing and communication,
+          and once fire is detected, an alarm system is automatically activated to produce a beep sound as an alert.
+          This project demonstrates the integration of computer vision with embedded systems to create a practical,
+          real-time fire safety monitoring solution.
+        </p>
+      </div>
+      <!-- Three Project -->
+      <div class="project-card">
+        <img src="./images/project3.png" alt="">
+        <h3>Buffer Overflow Demonstration in C (2026)</h3>
+        <p>
+          Developed a C-based application intentionally designed with a stack buffer overflow vulnerability
+          to demonstrate insecure memory handling practices and the risks of improper bounds checking.
+          The program utilizes unsafe input functions such as gets() and unchecked scanf to illustrate
+          how unvalidated user input can overwrite adjacent memory regions, corrupt stack frames, and
+          potentially alter program execution flow. Through this project, I analyzed stack memory layout,
+          function call behavior, and the impact of overwriting local variables and return addresses.
+          The implementation was tested in a controlled environment to observe segmentation faults and
+          abnormal execution patterns, providing practical insight into how low-level vulnerabilities are exploited
+          and reinforcing the importance of secure coding practices,
+          input validation, and modern mitigation techniques in C programming.
+        </p>
+      </div>
+      <!-- Four Project -->
+      <div class="project-card">
+        <img src="./images/project4.png" alt="">
+        <h3>QR Code Generator (2025)</h3>
+        <p>
+          Developed a QR Code generation system using PHP and the chillerlan/php-qrcode library, implemented
+          and tested in a local development environment.Integrated Composer-based autoloading and structured
+          the application with a separate session management class for organized backend handling.
+          Implemented server-side validation to handle empty inputs and applied the Post-Redirect-Get
+          (PRG) pattern to prevent form resubmission and ensure clean request flow.
+          Configured customizable QR code scaling options and dynamically rendered QR images using
+          GD output format.Designed modular session handling to manage user messages and QR
+          output securely across redirects. This project strengthened my understanding of backend request
+          handling, session lifecycle management, third-party package integration, and structured PHP application
+          design.
+        </p>
+      </div>
+      <!-- Five Project -->
+      <div class="project-card">
+        <img src="./images/project5.png" alt="">
+        <h3>YouTube Clone Website (2025)</h3>
+        <p>
+          Developed a responsive YouTube-inspired frontend interface replicating core layout components including a
+          fixed header, collapsible sidebar, and structured video grid. The application was built using semantic HTML
+          and modular CSS, with separate stylesheets for header, sidebar, video components,
+          and general layout to maintain clean project organization.Implemented a responsive video card system using
+          CSS Grid to dynamically arrange thumbnails, channel information, and video metadata.
+          Designed reusable video preview components with structured thumbnail sections, overlay time indicators,
+          and channel profile displays to mimic real-world UI behavior.Integrated interactive UI elements such as
+          search bar controls, icon tooltips, notification counters, and hover effects to enhance user experience.
+          Applied consistent typography using Google Fonts (Roboto) and maintained layout alignment through structured
+          flexbox and grid techniques.This project strengthened my understanding of frontend layout structuring,
+          component-based design, responsive styling, and UI consistency in modern web applications.
+        </p>
+      </div>
+      <!-- Six Project -->
+      <div class="project-card">
+        <img src="./images/project6.png" alt="">
+        <h3>Rock Paper Scisscor</h3>
+        <p>
+          Developed an interactive Rock–Paper–Scissors web application using HTML, CSS, and JavaScript,
+          allowing users to play against a computer-generated opponent.Implemented core game logic for move
+          comparison, randomized computer selection, dynamic result evaluation, and real-time score tracking
+          through DOM manipulation.Designed a modular frontend structure with separated CSS files for layout,
+          buttons, and result components to ensure maintainability and scalability. Applied event-driven programming
+          to manage user interactions, button clicks, and overall game state updates effectively.Enhanced the
+          interface by integrating a Three.js-based animated background where a dynamic red visual element
+          follows cursor movement in real time, improving user engagement.
+          Also implemented autoplay functionality for automated gameplay simulation and a reset
+          feature for efficient score management.This project strengthened my understanding of JavaScript logic
+          implementation, state handling, DOM updates, third-party library integration, and interactive UI development.
+        </p>
+      </div>
     </div>
-  </div>
-  
-  <!-- DB-->
-  <div class="skill-box">
-    <div class="skill-have">
-      <i class="fa-solid fa-database"></i>
-      <h4>Database</h4>
-      <p>
-        <ul>MySQL</ul>
+  </section>
+  <!--Contact section-->
+
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+
+      <h2 class="contact-title">Get In <span>Touch</span></h2>
+
+      <p class="contact-description">
+        I’m open to opportunities in software development, backend engineering,
+        and cybersecurity. Feel free to reach out to discuss projects,
+        internships, or full-time roles.
       </p>
+
+      <div class="contact-info">
+        <p><strong>Email:</strong>
+          <a href="mailto:subashyuvaraj495@email.com">subashyuvaraj495@email.com</a>
+        </p>
+        <p><strong>Phone:</strong>
+          <a href="tel:+919786333903">9786333903</a>
+        </p>
+        <div class="contact-links">
+          <a href="https://wa.me/919876543210" target="_blank" rel="noopener">
+            <i class="bx bxl-whatsapp"></i>
+          </a>
+
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener">
+            <i class="bx bxl-github"></i>
+          </a>
+        </div>
+        <p><strong>Location:</strong> Tamil Nadu, India</p>
+      </div>
     </div>
-  </div>
-  
-  <!--OS & Env -->
- <div class="skill-box">
-    <div class="skill-have">
-      <i class="bx bx-windows"></i>
-      <h4>Operating System & Environments</h4>
-      <p>
-        <ul>Windows</ul> 
-        <ul>Linux</ul>
-        <ul>WSL</ul>
-      </p>
-    </div>
-  </div>
-  
-  <!--Dev tools -->
-  <div class="skill-box">
-    <div class="skill-have">
-      <i>🛠</i>
-      <h4>Development Tools</h4>
-      <p>
-        <ul>Git</ul>
-        <ul>Makefile</ul>
-      </p>
-    </div>
-  </div>
-  
-  <!-- Core tech concepts -->
-<div class="skill-box">
-    <div class="skill-have">
-      <i>⚙</i>
-      <h4>Core Technical Concepts</h4>
-      <p>
-        <ul>Socket Programming</ul>
-        <ul>Multithreading</ul>
-        <ul>Basic Networking Concepts</ul>
-      </p>
-    </div>
-  </div>
-
-<!--Tools and Tech -->
-  <div class="skill-box">
-    <div class="skill-have">
-      <h4>Engineering and Productivity</h4>
-      <p>
-        <ul>MATLAB</ul>
-        <ul>Microsoft Office Suite</ul> 
-        <ul>PCB Design & Assembly</ul>
-        <ul>Adobe Photoshop</ul>
-        <ul>Video Editing</ul>
-      </p>
-    </div>
-  </div>
-  
-  <!--Soft skills -->
-    <div class="skill-box">
-    <div class="skill-have">
-      <i class="fa-solid fa-splotch"></i>
-      <h4>Soft Skills</h4>
-      <p>
-        <ul>Good Communication</ul> 
-        <ul>Time Management</ul>
-        <ul>Teamwork</ul>
-        <ul>Adaptability</ul>
-      </p>
-    </div>
-  </div>
-
-</div>
+  </section>
 
 
-
-</section>
-
-<section class="projects" id="projects">
-
-<h2 class="heading">Projects</h2>
-<div class="project-box">
-
-  <div class="project-card">
-  <!-- First Project -->
-    <img src="./images/project1.png" alt="">
-    <h3>CNN-Based Detection and Classification of Lung and Colon Cancer (2025)</h3>
-    <p>
-      Developed an automated deep learning-based diagnostic system for detecting and classifying lung and colon cancer from histopathological images. 
-      The system utilized Convolutional Neural Networks (CNNs), specifically DenseNet-121 and ResNet-50 architectures, 
-      to accurately differentiate between benign and malignant tissue samples across five classes.
-      The workflow included image preprocessing (resizing, Gaussian filtering, contrast enhancement), 
-      Modified Fuzzy C-Means (MFCM) segmentation for isolating regions of interest, and texture-based 
-      feature extraction using Gray Level Co-occurrence Matrix (GLCM). 
-      Particle Swarm Optimization (PSO) was applied for optimal feature selection, improving classification efficiency.
-      A hybrid classification approach combining Multi-Class SVM and deep learning models was implemented and evaluated using metrics such as accuracy, 
-      sensitivity, specificity, F-score, Dice coefficient, and Jaccard index. 
-      The system was integrated with a user-friendly MATLAB GUI to enable real-time image upload and automated cancer prediction,
-       supporting medical professionals in faster and more reliable diagnosis.
-    </p>
-  </div>
-  <div class="project-card">
-    <!-- Second Project -->
-    <img src="./images/project2.png" alt="">
-    <h3>Fire Detection using Haar Cascade Classifier</h3>
-    <p>
-      The Fire Detection Using Haar Cascade Classifier project is a real-time computer vision–based safety system developed
-       to detect fire using the built-in camera of PC. The system is implemented in Python using the OpenCV 
-       and is based on the Haar Cascade algorithm proposed by Paul Viola and Michael Jones. The live video feed 
-       from the inbuilt webcam is processed frame by frame to identify fire regions, and when fire is detected, 
-       the system highlights the area and displays a notification on the screen. In addition to software detection, 
-       I integrated hardware components using an ESP32,LCD 16x2 and beep buzzer. 
-       The ESP32 is connected to the Python program for processing and communication, 
-       and once fire is detected, an alarm system is automatically activated to produce a beep sound as an alert.
-       This project demonstrates the integration of computer vision with embedded systems to create a practical, 
-      real-time fire safety monitoring solution.
-    </p>
-  </div>
-  <!-- Three Project -->
-  <div class="project-card">
-    <img src="./images/project3.png" alt="">
-    <h3>Buffer Overflow Demonstration in C (2026)</h3>
-    <p>
-      Developed a C-based application intentionally designed with a stack buffer overflow vulnerability 
-      to demonstrate insecure memory handling practices and the risks of improper bounds checking. 
-      The program utilizes unsafe input functions such as gets() and unchecked scanf to illustrate 
-      how unvalidated user input can overwrite adjacent memory regions, corrupt stack frames, and 
-      potentially alter program execution flow. Through this project, I analyzed stack memory layout, 
-      function call behavior, and the impact of overwriting local variables and return addresses. 
-      The implementation was tested in a controlled environment to observe segmentation faults and 
-      abnormal execution patterns, providing practical insight into how low-level vulnerabilities are exploited 
-      and reinforcing the importance of secure coding practices, 
-      input validation, and modern mitigation techniques in C programming.
-    </p>
-  </div>
-  <!-- Four Project -->
-  <div class="project-card">
-    <img src="./images/project4.png" alt="">
-    <h3>QR Code Generator (2025)</h3>
-    <p>
-      Developed a QR Code generation system using PHP and the chillerlan/php-qrcode library, implemented 
-      and tested in a local development environment.Integrated Composer-based autoloading and structured 
-      the application with a separate session management class for organized backend handling.
-      Implemented server-side validation to handle empty inputs and applied the Post-Redirect-Get 
-      (PRG) pattern to prevent form resubmission and ensure clean request flow. 
-      Configured customizable QR code scaling options and dynamically rendered QR images using 
-      GD output format.Designed modular session handling to manage user messages and QR 
-      output securely across redirects. This project strengthened my understanding of backend request 
-      handling, session lifecycle management, third-party package integration, and structured PHP application
-       design.
-    </p>
-  </div>
-  <!-- Five Project -->
-  <div class="project-card">
-    <img src="./images/project5.png" alt="">
-    <h3>YouTube Clone Website (2025)</h3>
-    <p>
-    Developed a responsive YouTube-inspired frontend interface replicating core layout components including a 
-    fixed header, collapsible sidebar, and structured video grid. The application was built using semantic HTML 
-    and modular CSS, with separate stylesheets for header, sidebar, video components, 
-    and general layout to maintain clean project organization.Implemented a responsive video card system using
-    CSS Grid to dynamically arrange thumbnails, channel information, and video metadata. 
-    Designed reusable video preview components with structured thumbnail sections, overlay time indicators, 
-    and channel profile displays to mimic real-world UI behavior.Integrated interactive UI elements such as 
-    search bar controls, icon tooltips, notification counters, and hover effects to enhance user experience.
-    Applied consistent typography using Google Fonts (Roboto) and maintained layout alignment through structured 
-    flexbox and grid techniques.This project strengthened my understanding of frontend layout structuring, 
-    component-based design, responsive styling, and UI consistency in modern web applications.
-    </p>
-  </div>
-  <!-- Six Project -->
-  <div class="project-card">
-    <img src="./images/project6.png" alt="">
-    <h3>Rock Paper Scisscor</h3>
-    <p>
-     Developed an interactive Rock–Paper–Scissors web application using HTML, CSS, and JavaScript, 
-     allowing users to play against a computer-generated opponent.Implemented core game logic for move 
-     comparison, randomized computer selection, dynamic result evaluation, and real-time score tracking 
-     through DOM manipulation.Designed a modular frontend structure with separated CSS files for layout, 
-     buttons, and result components to ensure maintainability and scalability. Applied event-driven programming 
-     to manage user interactions, button clicks, and overall game state updates effectively.Enhanced the 
-     interface by integrating a Three.js-based animated background where a dynamic red visual element 
-     follows cursor movement in real time, improving user engagement.
-     Also implemented autoplay functionality for automated gameplay simulation and a reset 
-     feature for efficient score management.This project strengthened my understanding of JavaScript logic 
-     implementation, state handling, DOM updates, third-party library integration, and interactive UI development.
-    </p>
-  </div>
-</div>
-</section>
-<!--Contact section-->
-
-<section class="contact-section" id="contact">
-  <div class="contact-container">
-
-    <h2 class="contact-title">Get In <span>Touch</span></h2>
-
-    <p class="contact-description">
-      I’m open to opportunities in software development, backend engineering, 
-      and cybersecurity. Feel free to reach out to discuss projects, 
-      internships, or full-time roles.
-    </p>
-
-    <div class="contact-info">
-      <p><strong>Email:</strong> 
-      <a href="mailto:subashyuvaraj495@email.com">subashyuvaraj495@email.com</a>
-      </p>
-      <p><strong>Phone:</strong> 
-      <a href="tel:+919786333903">9786333903</a>
-      </p>
-      <div class="contact-links">
-      <a href="https://wa.me/919876543210" target="_blank" rel="noopener">
-        <i class="bx bxl-whatsapp"></i>
-      </a>
-
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">
-        <i class="bx bxl-linkedin"></i>
-      </a>
-
-      <a href="https://github.com/yourusername" target="_blank" rel="noopener">
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://github.com/subash-y" target="_blank">
         <i class="bx bxl-github"></i>
       </a>
-    </div>
-      <p><strong>Location:</strong> Tamil Nadu, India</p>
-    </div>
-  </div>
-</section>
-
-
-<footer class="footer">
-  <div class="social-icons">
-    <a href="https://github.com/subash-y" target="_blank" >
-      <i class="bx bxl-github"></i>
-     </a>   
-    <a href="https://www.linkedin.com/in/subash-yuvaraj-9b5a03190" target="_blank">
-      <i class="bx bxl-linkedin"></i>
-    </a>
-    <a id="whatsappLink" target="_blank">
-       <i class="bx bxl-whatsapp"></i>
-    </a>
+      <a href="https://www.linkedin.com/in/subash-yuvaraj-9b5a03190" target="_blank">
+        <i class="bx bxl-linkedin"></i>
+      </a>
+      <a id="whatsappLink" target="_blank">
+        <i class="bx bxl-whatsapp"></i>
+      </a>
     </div>
 
     <ul class="list">
       <li>
-          <a href="#home">Home</a>
+        <a href="#home">Home</a>
       </li>
       <li>
-          <a href="#about">About</a>
+        <a href="#about">About</a>
       </li>
-       <li>
-          <a href="#skills">skill</a>
+      <li>
+        <a href="#skills">skill</a>
       </li>
-       <li>
-          <a href="#projects">project</a> 
+      <li>
+        <a href="#projects">project</a>
       </li>
     </ul>
     <p class="copyright">
-    &copy; <span id="year"></span> 
-     Subash Y | All rights reserved.
-  </p>
+      &copy; <span id="year"></span>
+      Subash Y | All rights reserved.
+    </p>
 
-</footer>
+  </footer>
 
 
-        <script src="./js/script.js"></script>
-  </body>
+  <script src="./js/script.js"></script>
+</body>
+
 </html>
