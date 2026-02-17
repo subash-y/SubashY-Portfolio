@@ -412,9 +412,12 @@ section {
   gap: 2rem;
   padding: 5rem 2rem;
   overflow: hidden;
-  cursor: pointer;
   box-shadow: 0 0 5px var(--main-color);
   transition: 0.3s ease-out;
+}
+
+.project-card[data-url] {
+  cursor: pointer;
 }
 
 .project-card:hover {

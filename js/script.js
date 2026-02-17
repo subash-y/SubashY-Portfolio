@@ -75,3 +75,15 @@ const phone = "919786333903";
 const encodedMessage = encodeURIComponent(message);
 document.getElementById("whatsappLink").href =
   `https://wa.me/${phone}?text=${encodedMessage}`;
+
+
+  //Project open 
+
+
+
+document.querySelectorAll(".project-card[data-url]").forEach(card => {
+  card.addEventListener("click", () => {
+    const url = card.dataset.url;
+    window.open(url, "_blank", "noopener,noreferrer");
+  });
+});
